@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+}
+body{
+    width: 750px;
+    height: 600px;
+    margin: auto;
+    margin-top: 5%;
+    background-position:0%;
+    background-repeat  : no-repeat;
+}
+header{
+    width: 900px;
+    height: 160px;
+    background-color: white;
+}
+main{
+    width: 900px;
+    height: 340px;
+    background-color: white;
+}
+/*Titulo 
+*/
+label#titulo{
+    font-size: 50px;
+    margin: auto;
+}
+
+label#inicio{
+    font-size: 40px;
+    color: red;
+    text-align: center;
+}
+label#la_ventas{
+    font-size: 20px;
+    color: blue;
+}
+label#labelreportes{
+    font-size: 20px;
+    color: blue;
+    }
+label#la_cliente{
+    font-size: 20px;
+    color: blue;
+} 
+label#la_producto{
+    font-size: 20px;
+    color: blue;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }

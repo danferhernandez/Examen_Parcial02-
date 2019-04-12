@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="piola">
+        <title>Examen02</title>
+    </head>
+    <body background="imagen/car.jpg">
+        <header>
+            <img src="imagen/logoexa.png" id="logo">
+            <label id="titulo">Sistema de Venta-Exa01</label>
+            <hr />
+        </header>
+        <main>
+            <ul id="button">
+                <li><a class="active" onclick="inicio()">Inicio</a></li>
+                <li><a onclick="ventas()">Ventas</a></li>
+			    <li><a onclick="reportes()">Reportes</a></li>
+			    <li><a onclick="clientes()">Clientes</a></li>
+			    <li><a onclick="productos()">Productos</a></li>
+            </ul>
+            
+            <label id="inicio">Bienvenido al Sistema de Ventas</label>
+            
+            <div style="display: none" id="ventas">
+                <label id="la_ventas">Ventas</label>
+                <hr />
+                <label for="">Cliente</label>
+                <input type="text" placeholder="Cliente*">
+                <button onclick="cliente()"><i class="search"></i></button>
+                <br />
+                <button onclick="producto()"><i class="produc"></i>Producto</button>
+                <br />
+                <input type="text" placeholder="Producto: ">
+                <input type="text" placeholder="Precio: ">
+                <input type="text" placeholder="Cantidad: ">
+                <br />
+                <input onclick="enviar()" type="button" value="Enviar">
+            </div>
+            
+            <div id="reportes" style="display:none">
+				<label id="labelreportes">Reportes</label>
+				<hr />
+			</div>
+            
+            <div id="cliente" style="display: none">
+            <label id="la_cliente">Clientes</label>
+            <hr />
+            <table>
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>DNI</th>
+                    <th>Accion</th>
+                </tr>
+                <tr >
+                    <th>001</th> 
+                    <th>David</th>
+                    <th>Reyna</th>
+                    <th>12345678</th>
+                    <th>Accion</th>
+                </tr>
+                <tr >
+                    <th>002</th>
+                    <th>Carol</th>
+                    <th>Acuña</th>
+                    <th>96325871</th>
+                    <th>Accion</th>
+                </tr>
+                <tr >
+                    <th>003</th>
+                    <th>Rosa</th>
+                    <th>Perez</th>
+                    <th>52364178</th>
+                    <th>Accion</th>
+                </tr>
+            </table>
+            </div>
+            
+            <div id="la_producto" style="display: none">
+                <table>
+					<tr>
+						<th>Producto</th>
+						<th>Precio</th>
+						<th>Cantidad</th>
+						<th>Stock</th>
+						<th>Accion</th>
+					</tr>
+					<tr>
+						<td>P001</td>
+						<td>Mouse</td>
+						<td>25</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>P002</td>
+						<td>Teclado</td>
+						<td>50</td>
+						<td>30</td>
+						
+					</tr>
+					<tr>
+						<td>P003</td>
+						<td>Parlantes</td>
+						<td>200</td>
+						<td>20</td>
+					</tr>
+					<tr>
+						<td>P004</td>
+						<td>Impresora</td>
+						<td>700</td>
+						<td>20</td>
+					</tr>
+				</table>
+            </div>
+        </main>
+        <footer></footer>
+        <script src="JS/script.js"></script>
+    </body>
+</html>
